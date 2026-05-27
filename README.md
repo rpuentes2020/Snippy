@@ -41,12 +41,98 @@ SnapMaster provides fast screenshot workflows, scrolling capture, screen recordi
 
 ---
 
-# Screenshots
+## Screenshots
 
-_Add screenshots here_
+### Capture Mode / Video
+
+![Capture Mode](docs/Snippy1.JPG)
+
+### History
+
+![Annotation Editor](docs/Snippy2.JPG)
+
+### Settingsor
+
+![Scrolling Capture](docs/Snippy3.JPG)
 
 Example:
 
 ```md
 ![Capture Mode](docs/capture-mode.png)
 ![Annotation Editor](docs/annotation-editor.png)
+
+---
+
+# Download
+
+Prebuilt portable releases are available under the GitHub Releases section.
+
+Download the latest:
+- Windows x64 portable EXE
+- ZIP package
+
+---
+
+# Building From Source
+
+## Requirements
+
+- Visual Studio 2022
+- .NET 8 SDK
+- Windows 10/11
+
+## Clone
+
+```bash
+git clone https://github.com/rpuentes2020/Snippy.git
+cd Snippy
+```
+
+## Run
+
+```bash
+dotnet run
+```
+
+## Publish Portable EXE
+
+```bash
+dotnet publish -c Release -r win-x64 ^
+-p:PublishSingleFile=true ^
+-p:SelfContained=true ^
+-p:IncludeNativeLibrariesForSelfExtract=true ^
+-p:EnableCompressionInSingleFile=true ^
+-p:PublishTrimmed=false
+```
+
+---
+
+# Recommended Repository Structure
+
+```text
+Snippy/
+¦
++-- docs/
++-- Snippy/
++-- README.md
++-- LICENSE
++-- NOTICE.md
++-- .gitignore
++-- Snippy.sln
+```
+
+---
+
+# Git Ignore
+
+Create a `.gitignore` file in the repository root:
+
+```gitignore
+.vs/
+bin/
+obj/
+publish/
+*.user
+*.suo
+*.pdb
+```
