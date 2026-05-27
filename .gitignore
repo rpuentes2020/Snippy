@@ -4,3 +4,26 @@ obj/
 *.user
 *.suo
 *.pdb
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Build folders
+bin/
+obj/
+
+# Publish folders
+publish/
+
+# Debug symbols
+*.pdb
+
+# Rider/ReSharper
+.idea/
+_ReSharper*/
+
+# OS files
+Thumbs.db
+.DS_Store
