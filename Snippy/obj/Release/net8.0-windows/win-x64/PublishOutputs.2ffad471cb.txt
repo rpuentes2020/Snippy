@@ -1,7 +1,0 @@
-C:\Publish\Snippy\Snippy.pdb
-C:\Publish\Snippy\D3DCompiler_47_cor3.dll
-C:\Publish\Snippy\PenImc_cor3.dll
-C:\Publish\Snippy\PresentationNative_cor3.dll
-C:\Publish\Snippy\vcruntime140_cor3.dll
-C:\Publish\Snippy\wpfgfx_cor3.dll
-C:\Publish\Snippy\Snippy.exe
